@@ -4,3 +4,5 @@ __Installation Instructions__
 - drag and drop the keys folder into `gamemodes/helix/plugins/`
 - finally, drag, drop & replace the existing `doors` plugin with my edited one
 
+Usage video:
+https://streamable.com/ozdpmq
