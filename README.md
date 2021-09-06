@@ -6,3 +6,6 @@ __Installation Instructions__
 
 Usage video:
 https://streamable.com/ozdpmq
+
+Model I used:
+https://steamcommunity.com/sharedfiles/filedetails/?id=248051620
