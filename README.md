@@ -6,6 +6,8 @@ __Installation Instructions__
 
 Usage video:
 https://streamable.com/ozdpmq
+Press R with the toolgun held to open the menu
 
 Model I used:
 https://steamcommunity.com/sharedfiles/filedetails/?id=248051620
+
