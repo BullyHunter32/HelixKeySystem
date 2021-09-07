@@ -11,8 +11,10 @@ https://streamable.com/ozdpmq
 Model I used:
 https://steamcommunity.com/sharedfiles/filedetails/?id=248051620
 
-Toolgun Controls:
+
+**Toolgun Controls**
 Left Click - Select Door(s)
-Right Click - Remove Door from the selected list
+Right Click  Remove Door from the selected list
 Reload - Open menu
 
+fuck github formatting
