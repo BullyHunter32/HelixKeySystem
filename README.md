@@ -6,8 +6,13 @@ __Installation Instructions__
 
 Usage video:
 https://streamable.com/ozdpmq
-Press R with the toolgun held to open the menu
+
 
 Model I used:
 https://steamcommunity.com/sharedfiles/filedetails/?id=248051620
+
+Toolgun Controls:
+Left Click - Select Door(s)
+Right Click - Remove Door from the selected list
+Reload - Open menu
 
