@@ -3,6 +3,7 @@ ITEM.description = "A key used to open a door."
 ITEM.model = "models/spartex117/key.mdl"
 ITEM.width = 1
 ITEM.height = 1
+ITEM.base = nil -- https://github.com/NebulousCloud/helix/blob/master/gamemode/core/libs/sh_item.lua#L181-L198
 
 -- function ITEM:OnInstanced(invID, x, y, item)
 -- 	item:SetData("HouseName", "Unknown House")
