@@ -130,9 +130,12 @@ function PLUGIN:CreateProperty(sName, tEntities, bOpen, bLock)
     if not sName then
         return
     end
-
-    bSpawn = bSpawn == nil and 0 or bSpawn == true and 1 or 0
-    bLock = bLock == nil and 1 or bLock == true and 1 or 0
+    
+    bSpawn = tostring(bSpawn)
+    bLock = tostring(bLock)
+    
+    bSpawn = bSpawn == nil and 0 or bSpawn == 'true' and 1 or 0
+    bLock = bLock == nil and 1 or bLock == 'true' and 1 or 0
 
     local tData = {}
     for k,v in ipairs(tEntities) do
