@@ -1,14 +1,16 @@
 local PLUGIN = PLUGIN
 
-local query = mysql:Create("ix_properties")
-    query:Create("id", "INT(11) UNSIGNED NOT NULL AUTO_INCREMENT")
-    query:Create("name", "VARCHAR(50) NOT NULL")
-    query:Create("map", "VARCHAR(50) NOT NULL")
-    query:Create("entities", "VARCHAR(255) NOT NULL")
-    query:Create("lock_spawn", "INT(2) UNSIGNED NOT NULL DEFAULT '1'")
-    query:Create("start_open", "INT(2) UNSIGNED NOT NULL DEFAULT '0'")
-    query:PrimaryKey("id")
-query:Execute()
+function PLUGIN:DatabaseConnected()
+    local query = mysql:Create("ix_properties")
+        query:Create("id", "INT(11) UNSIGNED NOT NULL AUTO_INCREMENT")
+        query:Create("name", "VARCHAR(50) NOT NULL")
+        query:Create("map", "VARCHAR(50) NOT NULL")
+        query:Create("entities", "VARCHAR(255) NOT NULL")
+        query:Create("lock_spawn", "INT(2) UNSIGNED NOT NULL DEFAULT '1'")
+        query:Create("start_open", "INT(2) UNSIGNED NOT NULL DEFAULT '0'")
+        query:PrimaryKey("id")
+    query:Execute()
+end
 
 PLUGIN.CachedDoors = {}
 function PLUGIN:GetAllDoorData(fCallback)
