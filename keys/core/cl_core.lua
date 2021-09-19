@@ -60,13 +60,13 @@ end
 function PLUGIN:RegisterProperty(sName, bLock, bOpen)
     if not sName then return end
     local tool = LocalPlayer():GetTool()
-    print(sName, bLock, bOpen)
+    if not tool or not istable(tool) then return end
     if tool.Name ~= "#tool.keys.name" then
-        print("Wrong tool!")
+        --print("Wrong tool!")
         return 
     end
-    print("Ents:")
-    PrintTable(tool.SelectedDoors or {})
+    --print("Ents:")
+    --PrintTable(tool.SelectedDoors or {})
     net.Start("ixKeysCreateProperty")
     self:WriteProperty(sName, bLock, bOpen, tool.SelectedDoors)
     net.SendToServer()
